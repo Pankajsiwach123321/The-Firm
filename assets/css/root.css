@@ -21,6 +21,8 @@
     --color-gary: #A5A5A5;
     --color-light-gary: #B0B0B0;
     --color-ellipes: #FEF0B8;
+    --color-white: #fff;
+    --color-bg-white: #F7F7F7;
     /* font-family */
     --ff-main:  'Nunito';
     --ff-primery: 'Lora';
@@ -108,5 +110,8 @@
 
 .color_ellipes {
     color: var(--color-ellipes)
+}
+.color_white {
+    color: var(--color-white)
 }
 
