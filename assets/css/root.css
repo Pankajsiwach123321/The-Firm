@@ -24,6 +24,7 @@
     --color-white: #fff;
     --color-bg-white: #F7F7F7;
     --color-white2:#FEFEFE;
+    --color-gray-44: #C4C4C4;
     /* font-family */
     --ff-main:  'Nunito';
     --ff-primery: 'Lora';
@@ -117,5 +118,9 @@
 }
 .bg_color_white2 {
     background: var(--color-white2)
+}
+    
+.color_gray-44 {
+    color: var(--color-gray-44)
 }
 
