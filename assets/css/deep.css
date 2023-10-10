@@ -169,6 +169,9 @@ box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
     justify-content: center;
   }
 }
+.slick-prev, .slick-next {
+  display: none !important;
+}
 .slick-slider1 .slick-slide.slick-current,
 .slick-slider1 .slick-slide.slick-center {
   transform: scale(0.9);
