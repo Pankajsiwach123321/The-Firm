@@ -1,0 +1,25 @@
+@import url(/assets/css/root.css);
+.casesResearchimg{
+    right: -6%;
+}
+.bg_gradient_white{
+    background: linear-gradient(180deg, rgba(245, 246, 247, 0.00) 0%, #F4F4F4 100%);
+}
+.activeLink{
+
+}
+.underyellow::after {
+    content: '';
+    position: absolute;
+    bottom: 4.5px;
+    width: 0;
+    left: 0;
+    height: 4px;
+    z-index: -1;
+    transition: all 0.3s linear;
+    background-color: var(--color-primery);
+}
+
+.underyellow:hover::after {
+    width: 86%;
+}
