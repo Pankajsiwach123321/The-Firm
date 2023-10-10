@@ -23,6 +23,7 @@
     --color-ellipes: #FEF0B8;
     --color-white: #fff;
     --color-bg-white: #F7F7F7;
+    --color-gray-44: #C4C4C4;
     /* font-family */
     --ff-main:  'Nunito';
     --ff-primery: 'Lora';
@@ -113,5 +114,8 @@
 }
 .color_white {
     color: var(--color-white)
+}
+.color_gray-44 {
+    color: var(--color-gray-44)
 }
 
