@@ -495,6 +495,7 @@ h1 {
 .backto-top {
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .mysubject {
