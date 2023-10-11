@@ -24,8 +24,9 @@
     <meta property="twitter:description" content="Get Bussiness
     Solutions with TheFirm." />
     <meta property="twitter:image" content="https://thumbs2.imgbox.com/ad/d8/Ljsd6FQP_t.png" />
-    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/deep.css">
+    <link rel="stylesheet" href="./assets/css/case.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -37,6 +38,20 @@
 </head>
 
 <body class="bg-bodys">
+    <!-- back-to-top -->
+    <div>
+        <img src="./assets/image/backtotop.png" alt="backtotop" id="backtops"
+            class="backto-top position-fixed bottom-0 end-0 d_nones m-4 z-2 bg-transparent" onclick="backtop()" />
+    </div>
+    <!-- preloder -->
+    <div id="preloder"
+        class="min-vh-100 bg-white d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 z-3">
+        <ul class="ps-0 mb-0">
+            <li>
+                <a href="#" class="text-decoration-none load-take"></a>
+            </li>
+        </ul>
+    </div>
     <div class="over-layer"></div>
     <header class="d-flex min-vh-100 flex-column">
         <nav class="pt-4 pb-3">
@@ -53,7 +68,7 @@
                     </label>
                     <ul class="ps-0 mb-0 d-flex align-items-center gap-45 menubar">
                         <li><a href="#"
-                                class="text-decoration-none ff_main fs_xmd fw-bold space-0_9 color_main underyellow position-relative finish">Home</a>
+                                class="text-decoration-none ff_main fs_xmd fw-bold space-0_9 color_main underyellow position-relative finish active-links">Home</a>
                         </li>
                         <li><a href="#"
                                 class="text-decoration-none ff_main fs_xmd fw-bold space-0_9 color_main underyellow position-relative finish">Solutions</a>
@@ -94,24 +109,65 @@
             </div>
         </div>
     </header>
-    <section class="our-partner">
-        <div class="container">
+    <section class="our-partner ">
+        <div class="container position-relative">
             <h2 class="color_main ff_main fs_2xl fw-900 lh-58 space-0_88 text-center pt-100">Our <span
                     class="position-relative headingunderline">Partner</span></h2>
             <div class="social-icon">
-                <div class="card-bg-colorful-media">
-                    <img src="./assets/image/window.png" alt="window">
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/window.png" alt="window" class="w-100">
+                    </div>
                 </div>
-                <div class="card-bg-colorful-media">
-                    <img src="./assets/image/googlepic.png" alt="window">
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/googlepic.png" alt="window" class="w-100">
+                    </div>
                 </div>
-                <div class="card-bg-colorful-media">
-                    <img src="./assets/image/firefox.png" alt="window">
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/firefox.png" alt="window" class="w-100">
+                    </div>
                 </div>
-                <div class="card-bg-colorful-media">
-                    <img src="./assets/image/safari.png" alt="window">
+                <div class="card-bg-colorful-media  mx-md-5">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/safari.png" alt="window" class="w-100">
+                    </div>
+                </div>
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/window.png" alt="window" class="w-100">
+                    </div>
+                </div>
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/googlepic.png" alt="window" class="w-100">
+                    </div>
+                </div>
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/firefox.png" alt="window" class="w-100">
+                    </div>
+                </div>
+                <div class="card-bg-colorful-media mx-md-5 ">
+                    <div class="d-flex align-items-center justify-content-center">
+                        <img src="./assets/image/safari.png" alt="window" class="w-100">
+                    </div>
                 </div>
             </div>
+            <a href="#" class="arow-slide leftarrow position-absolute pre d-none d-md-block"><svg width="10" height="17"
+                    viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 1L1 8.5L8.5 16" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+
+            </a>
+            <a href="#" class="arow-slide rightarrow position-absolute nex d-none d-md-block"><svg width="10"
+                    height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.5 1L9 8.5L1.5 16" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </a>
 
         </div>
     </section>
@@ -513,15 +569,56 @@
                 More</button>
         </div>
     </section>
-    <section>
+    <section class="pt-5 mt-5">
         <iframe class="w-100"
             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d223073.76765557838!2d75.86039234168713!3d29.119624267262555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1696928643813!5m2!1sen!2sin"
             width="600" height="396" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="container">
+            <div class="d-flex align-items-center justify-content-center">
+                <div class="card-sec3">
+                    <h2 class="m-0 text-center color_main ff_main fs_2xl fw-900 lh-58 spacing_0_88">Get In <span
+                            class="position-relative z-1 sec3-text-line">Touch </span> </h2>
+                    <div class="d-sm-flex justify-content-between pt-42">
+                        <div>
+                            <p class="spacing_0_28 lh-1 color_gary ff_main fs_2xsm fw-normal m-0">Name</p>
+                            <input
+                                class=" border-bottom border-0 mw-353 color_main ff_main fs_xmd lh-base spacing_0_36 fw-bold"
+                                type="text" placeholder="Lorem Ipusum">
+                        </div>
+                        <div class=" ml-85 pt-sm-0 pt-4">
+                            <p class="spacing_0_28 lh-1 color_gary ff_main fs_2xsm fw-normal m-0">Email</p>
+                            <input placeholder="LoremIpusum@mail.com"
+                                class="border-bottom border-0 mw-353 color_main ff_main fs_xmd lh-base spacing_0_36 fw-bold"
+                                type="text">
+                        </div>
+                    </div>
+                    <div class="d-sm-flex justify-content-between pt-42">
+                        <div>
+                            <p class="spacing_0_28 lh-1 color_gary ff_main fs_2xsm fw-normal m-0">Phone</p>
+                            <input
+                                class=" border-bottom border-0 mw-353 color_main ff_main fs_xmd lh-base spacing_0_36 fw-bold"
+                                type="text" placeholder="+0 968 856 1524">
+                        </div>
+                        <div class=" ml-85 pt-sm-0 pt-4">
+                            <p class="spacing_0_28 lh-1 color_gary ff_main fs_2xsm fw-normal m-0">Subject</p>
+                            <input placeholder="Choose your subject"
+                                class="border-bottom border-0 mw-353 color_main ff_main fs_xmd lh-base spacing_0_36 fw-bold"
+                                type="text">
+                        </div>
+                    </div>
+                  
+                    <div class="pt-53 d-flex align-items-center justify-content-center">
+                        <button
+                            class="contact-btn text-white fs_xmd fw-bold lh-base ff_main spacing_0_9">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </section>
     <footer>
-        <div class="container pt-5 mt-5">
+        <div class="container p m">
             <img src="./assets/image/navlogo.png" alt="navlogo" class="mx-auto d-flex justify-content-center">
             <div class="d-flex justify-content-between align-items-center mw-707 mx-auto gap-4 flex-wrap pt-5">
                 <a href="#"
@@ -621,7 +718,10 @@
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+
                     }
                 },
                 {
@@ -629,7 +729,9 @@
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1,
-                        autoPlay: true,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+
                     }
                 }]
         })
@@ -640,11 +742,14 @@
     </script>
     <script>
         $('.social-icon').slick({
+            arrows: true,
             dots: false,
-            infinite: false,
+            infinite: true,
+            prevArrow: ".pre",
+            nextArrow: ".nex",
             speed: 300,
             slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToScroll: 1,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -652,21 +757,25 @@
                         slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
-                        dots: true
+                        dots: false
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 767,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
                     }
                 }
                 // You can unslick at a given breakpoint now by adding:
