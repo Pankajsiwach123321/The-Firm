@@ -21,6 +21,9 @@
 .underyellow:hover::after {
   width: 86%;
 }
+.serchInput:focus{
+outline: unset !important;
+}
 /* section 2  */
 .sec2-card {
   border: 1px solid rgba(250, 202, 16, 0.4) !important;
