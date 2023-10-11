@@ -69,7 +69,7 @@
     background-color: var(--color-primery);
 }
 
-.active-links::after {
+.active-links::before {
     content: '';
     position: absolute;
     bottom: 4.5px;
