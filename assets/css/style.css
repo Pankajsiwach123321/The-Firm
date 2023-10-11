@@ -301,6 +301,7 @@ h1 {
     background: var(--color-white);
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.25);
 }
+
 .serchInput:focus {
     outline: unset !important;
 }
@@ -1081,6 +1082,7 @@ textarea {
     right: 38%;
     z-index: -1;
 }
+
 /* media query  */
 @media (min-width:575.5px) {
     .branding-card {
@@ -1147,6 +1149,10 @@ textarea {
 
     .pt-54 {
         padding-top: 54px !important;
+    }
+
+    .min-vh_100 {
+        min-height: 100vh;
     }
 }
 
