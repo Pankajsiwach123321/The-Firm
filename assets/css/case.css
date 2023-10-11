@@ -163,6 +163,7 @@ input{
 }
 textarea{
     outline: unset;
+    resize: none !important;
 }
 .contact-btn{
     border-radius: 5px;
