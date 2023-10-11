@@ -1,63 +1,60 @@
 @import url(/assets/css/root.css);
-.casesResearchimg{
-    right: -6%;
+.casesResearchimg {
+  right: -6%;
 }
-.bg_gradient_white{
-    background: linear-gradient(180deg, rgba(245, 246, 247, 0.00) 0%, #F4F4F4 100%);
+.bg_gradient_white {
+  background: linear-gradient(180deg, rgba(245, 246, 247, 0) 0%, #f4f4f4 100%);
 }
-.activeLink{
 
-}
 .underyellow::after {
-    content: '';
-    position: absolute;
-    bottom: 4.5px;
-    width: 0;
-    left: 0;
-    height: 4px;
-    z-index: -1;
-    transition: all 0.3s linear;
-    background-color: var(--color-primery);
+  content: "";
+  position: absolute;
+  bottom: 4.5px;
+  width: 0;
+  left: 0;
+  height: 4px;
+  z-index: -1;
+  transition: all 0.3s linear;
+  background-color: var(--color-primery);
 }
 
 .underyellow:hover::after {
-    width: 86%;
+  width: 86%;
 }
 /* section 2  */
-.sec2-card{
-    border: 1px solid rgba(250, 202, 16, 0.40) !important;
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.09) !important;
+.sec2-card {
+  border: 1px solid rgba(250, 202, 16, 0.4) !important;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.09) !important;
 }
-.bg-black_main{
-    background: var(--color-main) !important;
+.bg-black_main {
+  background: var(--color-main) !important;
 }
 
-.readMore{
-    padding: 10px 30px !important;
-    transition: .3s;
-
+.readMore {
+  padding: 10px 30px !important;
+  transition: 0.3s;
 }
-.readMore:hover{
-background: #FACA10 !important;
-box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35) !important;
+.readMore:hover {
+  background: #faca10 !important;
+  box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35) !important;
 }
-.sec2Img{
-    transition: .3s;
+.sec2Img {
+  transition: 0.3s;
 }
-.sec2-card:hover .sec2Img{
-background: url(<path-to-image>), lightgray 50% / cover no-repeat !important;
-box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
+.sec2-card:hover .sec2Img {
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat !important;
+  box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
 }
-.loadMore{
-    padding: 10px 30px;
+.loadMore {
+  padding: 10px 30px;
 }
 /* section 3  */
-.bg-black1{
-    background:var(--color-main)
+.bg-black1 {
+  background: var(--color-main);
 }
 
- /* height weight  */
- .wh_200 {
+/* height weight  */
+.wh_200 {
   width: 200px;
   height: 200px;
 }
@@ -80,7 +77,7 @@ box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
 }
 .lh_58 {
   line-height: 58px !important;
-} 
+}
 
 /* position  */
 .top-2 {
@@ -93,7 +90,7 @@ box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
   right: 45% !important;
 }
 
- /* testimonials underline  */
+/* testimonials underline  */
 .testiMonials::after {
   content: "";
   position: absolute;
@@ -109,7 +106,7 @@ box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
 .varticleLine {
   width: 3px;
   height: 25px;
-} 
+}
 
 /* font weight  */
 .fw_900 {
@@ -165,31 +162,45 @@ box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
   .slick-track {
     display: flex;
     align-items: center;
-    /* height: 100%; */
     justify-content: center;
   }
 }
-.slick-prev, .slick-next {
+
+.slick-prev,
+.slick-next {
   display: none !important;
 }
 .slick-slider1 .slick-slide.slick-current,
 .slick-slider1 .slick-slide.slick-center {
-  transform: scale(0.9);
+  transform: scale(0.8);
   width: 100%;
   max-width: 280px !important;
   height: 270px;
   align-items: center;
   opacity: 1;
+  
 }
 .slick-slider1 .slick-slide,
 .slick-slider1 .slick-slide {
-  opacity: 0.6;
   transform: scale(0.5);
 }
-.slick-slider1 .slick-slide.slick-current img,
-img {
+
+/* slick-slide slick-center  */
+.slick-slider1 .slick-slide,
+.slick-slider1 .slick-slide div:has(+ .slick-center) {
+  opacity: 0.6;
+  transform: scale(0.3);
+}
+.slick-slider1 .slick-slide:has(+ .slick-center),
+.slick-slider1 .slick-center + .slick-slide {
+  transform: scale(0.5);
+}
+
+/* image ellipse  */
+.slick-slider1 .slick-slide.slick-current img {
   display: block !important;
 }
+
 /* media query  */
 @media (min-width: 600px) {
   .groupImg {
@@ -205,9 +216,7 @@ img {
 }
 @media (min-width: 1100px) {
   .groupImg {
-    right: -7%;
+    right: 7%;
     bottom: 8%;
   }
 }
-
-
