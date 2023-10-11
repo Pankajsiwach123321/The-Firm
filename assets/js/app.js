@@ -35,3 +35,24 @@ finish.forEach(e => {
         nav.classList.toggle("left-corner")
     })
 });
+// preloder
+setTimeout(() => {
+    document.getElementById("preloder").classList.add("d-none");
+    document.body.classList.remove("overflow-hidden");
+}, 2000);
+
+// backtotop
+
+function backtop() {
+    window.scrollTo(0, 0);
+}
+
+window.addEventListener("scroll", function () {
+    const mybackto = document.getElementById("backtops");
+    if (window.scrollY > 500) {
+        mybackto.style.display = "block";
+    }
+    else {
+        mybackto.style.display = "none";
+    }
+});
