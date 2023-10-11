@@ -179,6 +179,7 @@
   height: 270px;
   align-items: center;
   opacity: 1;
+  
 }
 .slick-slider1 .slick-slide,
 .slick-slider1 .slick-slide {
@@ -204,6 +205,9 @@
 .slick-slider1 .slick-slide.slick-current img {
   display: block !important;
 }
+.slider-nav .slick-slide{
+  margin-left: 12px !important;
+}
 /* media query  */
 @media (min-width: 600px) {
   .groupImg {
@@ -219,7 +223,7 @@
 }
 @media (min-width: 1100px) {
   .groupImg {
-    right: -7%;
+    right: 7%;
     bottom: 8%;
   }
 }
