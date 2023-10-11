@@ -448,6 +448,7 @@ h1 {
     filter: blur(100%);
     min-height: 120px !important;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .card-bg-colorful-media:hover {
