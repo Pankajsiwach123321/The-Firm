@@ -34,23 +34,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
         integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="bg-bodys overflow-hidden">
-        <!-- back-to-top -->
-        <div>
-            <img src="./assets/image/backtotop.png" alt="backtotop" id="backtops"
-                class="backto-top position-fixed bottom-0 end-0 d_nones m-4 z-2 bg-transparent" onclick="backtop()">
-        </div>
-        <!-- preloder -->
-        <div id="preloder"
-            class="min-vh-100 bg-white d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 z-5">
-            <ul class="ps-0 mb-0">
-                <li>
-                    <a href="#" class="text-decoration-none load-take"></a>
-                </li>
-            </ul>
-        </div>
+    <!-- back-to-top -->
+    <div>
+        <img src="./assets/image/backtotop.png" alt="backtotop" id="backtops"
+            class="backto-top position-fixed bottom-0 end-0 d_nones m-4 z-2 bg-transparent" onclick="backtop()">
+    </div>
+    <!-- preloder -->
+    <div id="preloder"
+        class="min-vh-100 bg-white d-flex justify-content-center align-items-center position-fixed top-0 start-0 w-100 z-5">
+        <ul class="ps-0 mb-0">
+            <li>
+                <a href="#" class="text-decoration-none load-take"></a>
+            </li>
+        </ul>
+    </div>
     <div class="over-layer"></div>
     <!-- header  -->
     <header>
@@ -100,7 +101,7 @@
         <div class="bg_gradient_white overflow-hidden ">
             <div class="container">
                 <div class="row pt-3 align-items-center  pb-2">
-                    <div class="col-lg-4 pt-lg-0 pt-3 ">
+                    <div class="col-lg-4 pt-lg-0 pt-3 " data-aos="fade-down">
                         <h1 class="color_main ff_main fs_2xl fw-900 lh-64 space-0_9">Our Research &
                             Case Studies</h1>
                         <p class="fw-normal color_main fs_xmd space-0_9 ff_primary m-0 p-0 pt-4 mt-1 pb-4 mb-2">Lorem
@@ -112,7 +113,7 @@
                             class="text-decoration-none ff_main fs_xmd fw-bold space-0_9 color_main nav-get-button color_white finish">Get
                             in Touch</button>
                     </div>
-                    <div class="col-lg-8 pt-lg-0 pt-3 ">
+                    <div class="col-lg-8 pt-lg-0 pt-3 " data-aos="fade-up">
                         <img src="./assets/image/casesResearchimg.png" alt="casesResearchimg"
                             class="w-100 rounded-5 position-relative casesResearchimg">
                     </div>
@@ -124,11 +125,11 @@
     <section>
         <div class="container pb-lg-5 pb-md-4 pb-sm-3 pb-3 ">
             <!-- heading  -->
-            <h2
-                class="color_main ff_main fs_2xl fw-900 lh-58 space-0_88  mb-1 text-center pt-lg-5 pt-md-4 pt-sm-3 pt-2 mt-lg-5 mt-md-4 mt-sm-3 mt-2">
+            <h2 class="color_main ff_main fs_2xl fw-900 lh-58 space-0_88  mb-1 text-center pt-lg-5 pt-md-4 pt-sm-3 pt-2 mt-lg-5 mt-md-4 mt-sm-3 mt-2"
+                data-aos="fade-down">
                 Our <span class="position-relative headingunderline z-1">Cases</span></h2>
             <!-- tab buttons  -->
-            <div class="row mt-lg-5 mt-md-4 mt-3  mb-3">
+            <div class="row mt-lg-5 mt-md-4 mt-3  mb-3" data-aos="fade-up">
                 <div class="col-lg-2 col-md-4 col-sm-6 justify-content-center d-flex">
                     <button
                         class="color_gray-44 ff_main fs_xmd  fw-bold space-0_9 after-line-button position-relative">Show
@@ -143,30 +144,35 @@
                         class="color_gray-44 ff_main fs_xmd  fw-bold space-0_9 after-line-button position-relative">Digital
                         Partners</button>
                 </div>
-                <div class=" col-lg-3 col-md-4 col-sm-6 pt-3 pt-lg-0 justify-content-lg-start justify-content-center  d-flex">
+                <div
+                    class=" col-lg-3 col-md-4 col-sm-6 pt-3 pt-lg-0 justify-content-lg-start justify-content-center  d-flex">
                     <button
                         class="color_gray-44 ff_main fs_xmd  fw-bold space-0_9 after-line-button position-relative">SEO</button>
                 </div>
                 <div class="col-lg-2 justify-content-end d-flex pt-lg-0 pt-4 ">
                     <div class="border-0 border-bottom d-flex align-items-center ">
-                    <input class="border-0 serchInput fw-bold spacing-0_9 color_gray-44 lh-lg " type="search" placeholder="Search" >
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                        <g clip-path="url(#clip0_3307_2900)">
-                          <path d="M19.7556 18.5773L14.0682 12.8899C15.1699 11.5291 15.8332 9.7999 15.8332 7.9166C15.8332 3.55164 12.2815 0 7.91656 0C3.55161 0 0 3.55161 0 7.91656C0 12.2815 3.55164 15.8332 7.9166 15.8332C9.7999 15.8332 11.5291 15.1699 12.8899 14.0682L18.5773 19.7556C18.7398 19.9181 18.9531 19.9998 19.1665 19.9998C19.3798 19.9998 19.5932 19.9181 19.7557 19.7556C20.0815 19.4298 20.0815 18.9031 19.7556 18.5773ZM7.9166 14.1665C4.46996 14.1665 1.66666 11.3632 1.66666 7.91656C1.66666 4.46992 4.46996 1.66662 7.9166 1.66662C11.3632 1.66662 14.1665 4.46992 14.1665 7.91656C14.1665 11.3632 11.3632 14.1665 7.9166 14.1665Z" fill="#C4C4C4"/>
-                        </g>
-                        <defs>
-                          <clipPath id="clip0_3307_2900">
-                            <rect width="20" height="20" fill="white"/>
-                          </clipPath>
-                        </defs>
-                      </svg></a>
-                </div>
+                        <input class="border-0 serchInput fw-bold spacing-0_9 color_gray-44 lh-lg " type="search"
+                            placeholder="Search">
+                        <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <g clip-path="url(#clip0_3307_2900)">
+                                    <path
+                                        d="M19.7556 18.5773L14.0682 12.8899C15.1699 11.5291 15.8332 9.7999 15.8332 7.9166C15.8332 3.55164 12.2815 0 7.91656 0C3.55161 0 0 3.55161 0 7.91656C0 12.2815 3.55164 15.8332 7.9166 15.8332C9.7999 15.8332 11.5291 15.1699 12.8899 14.0682L18.5773 19.7556C18.7398 19.9181 18.9531 19.9998 19.1665 19.9998C19.3798 19.9998 19.5932 19.9181 19.7557 19.7556C20.0815 19.4298 20.0815 18.9031 19.7556 18.5773ZM7.9166 14.1665C4.46996 14.1665 1.66666 11.3632 1.66666 7.91656C1.66666 4.46992 4.46996 1.66662 7.9166 1.66662C11.3632 1.66662 14.1665 4.46992 14.1665 7.91656C14.1665 11.3632 11.3632 14.1665 7.9166 14.1665Z"
+                                        fill="#C4C4C4" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_3307_2900">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></a>
+                    </div>
                 </div>
             </div>
             <!-- cards  -->
             <div class="row pt-lg-5 pt-md-4 pt-3 ">
                 <!-- card 1 -->
-                <div class="col-lg-4 col-sm-6 col-12">
+                <div class="col-lg-4 col-sm-6 col-12" data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -188,7 +194,7 @@
                     </div>
                 </div>
                 <!-- card 2 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 pt-sm-0">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 pt-sm-0" data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -210,7 +216,7 @@
                     </div>
                 </div>
                 <!-- card 3 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-lg-0 pt-3">
+                <div class="col-lg-4 col-sm-6 col-12 pt-lg-0 pt-3" data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -232,7 +238,7 @@
                     </div>
                 </div>
                 <!-- card 4 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4" data-aos="fade-up">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -254,7 +260,7 @@
                     </div>
                 </div>
                 <!-- card 5 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4" data-aos="fade-up">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -276,7 +282,7 @@
                     </div>
                 </div>
                 <!-- card 6 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4" data-aos="fade-up">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -298,7 +304,7 @@
                     </div>
                 </div>
                 <!-- card 7 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4" data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -320,7 +326,7 @@
                     </div>
                 </div>
                 <!-- card 8 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4" data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -342,7 +348,7 @@
                     </div>
                 </div>
                 <!-- card 9 -->
-                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4 mb-sm-0 mb-3 ">
+                <div class="col-lg-4 col-sm-6 col-12 pt-3 mt-0 mt-xl-4 mb-sm-0 mb-3 " data-aos="fade-down">
                     <div class="card rounded-4 sec2-card mx-xl-3">
                         <!-- card content  -->
                         <div class="card-body p-3">
@@ -374,7 +380,9 @@
         <!-- container  -->
         <div class="container">
             <!-- title  -->
-            <h2 class="m-0 p-0  ff_main fs_2xl color_main  text-center  lh_58 spacing_08 fw_900 pt-lg-5 py-lg-5 py-md-4 py-3">Our
+            <h2
+                class="m-0 p-0  ff_main fs_2xl color_main  text-center  lh_58 spacing_08 fw-900 pt-lg-5 py-lg-5 py-md-4 py-3">
+                Our
                 <span class="position-relative testiMonials z-1 ">Testimonials</span>
             </h2>
             <!-- slick-slider  -->
@@ -576,7 +584,8 @@
                 </a>
             </div>
             <div>
-                <p class="color_gary fs_xsm ff_main fw-normal spaceing-3_12 lh-16 pt-3 text-center pb-lg-4 pb-3 mb-2">Copyrights
+                <p class="color_gary fs_xsm ff_main fw-normal spaceing-3_12 lh-16 pt-3 text-center pb-lg-4 pb-3 mb-2">
+                    Copyrights
                     ©2020 Thefirm. All Right Reserved</p>
             </div>
         </div>
@@ -590,7 +599,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
         integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({
+            duration: 1200,
+            once: true,
+        })</script>
+
     <script>
         $('.slider-for').slick({
             centerMode: true,

@@ -116,10 +116,6 @@
 
 /* header */
 
-.fw-900 {
-    font-weight: 900;
-}
-
 .lh-64 {
     line-height: 64px;
 }
@@ -277,7 +273,7 @@ h1 {
     position: absolute;
     width: 30px;
     height: 4px;
-    background-color: #F7F7F7;
+    background-color: var(--color-bg-white);
     stroke-width: 2px;
     left: -30px;
     top: 21px;
@@ -360,7 +356,7 @@ h1 {
 }
 
 .moveslide-icon-1 {
-    background-color: #FDEFB7;
+    background-color: var(--color-op-yellow);
     opacity: 0.8;
     padding: 12px 19px 11px 19px;
     max-width: 95px;
@@ -372,7 +368,7 @@ h1 {
 }
 
 .moveslide-icon-2 {
-    background-color: #FDEFB7;
+    background-color: var(--color-op-yellow);
     opacity: 0.8;
     padding: 12px 19px 11px 19px;
     max-width: 95px;
@@ -562,21 +558,21 @@ footer div a:hover svg path {
 /* section 2  */
 .sec2-card {
     border: 1px solid rgba(250, 202, 16, 0.4) !important;
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.09) !important;
+    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.09);
 }
 
 .bg-black_main {
-    background: var(--color-main) !important;
+    background: var(--color-main);
 }
 
 .readMore {
-    padding: 10px 30px !important;
+    padding: 10px 30px;
     transition: 0.3s;
 }
 
 .readMore:hover {
-    background: #faca10 !important;
-    box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35) !important;
+    background: var(--color-button);
+    box-shadow: 0px 10px 40px -12px rgba(250, 202, 16, 0.35);
 }
 
 .sec2Img {
@@ -584,8 +580,7 @@ footer div a:hover svg path {
 }
 
 .sec2-card:hover .sec2Img {
-    background: url(<path-to-image>), lightgray 50% / cover no-repeat !important;
-    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09) !important;
+    box-shadow: 0px 7px 13px 0px rgba(0, 0, 0, 0.09);
 }
 
 .loadMore {
@@ -657,11 +652,6 @@ footer div a:hover svg path {
     height: 25px;
 }
 
-/* font weight  */
-.fw_900 {
-    font-weight: 900 !important;
-}
-
 /* ring ellipse  */
 .groupImg {
     right: 15%;
@@ -699,13 +689,13 @@ footer div a:hover svg path {
     content: "•";
     text-align: center;
     opacity: 0.25;
-    color: #fdea9f !important;
+    color: var(--color-dicot) !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-dots li.slick-active button:before {
-    color: #faca10 !important;
+    color: var(--color-button) !important;
 }
 
 .slick-slider1 {
@@ -974,7 +964,7 @@ textarea {
 }
 
 .bg-grey {
-    background-color: #F7F7F7;
+    background-color: var(--color-bg-white);
 }
 
 .card-1 {
@@ -1192,7 +1182,7 @@ textarea {
         width: 100%;
         height: 6px;
         border-radius: 5px;
-        background-color: black;
+        background-color: var(--color-main);
     }
 
     .left-corner {
